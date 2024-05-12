@@ -1,7 +1,4 @@
-import networkx as nx
 from collections import deque
-from task_1 import G
-
 
 # Представлення графа за допомогою списку суміжності
 graph = {
@@ -13,11 +10,6 @@ graph = {
     'F': ['C', 'E', 'G'],
     'G': ['D', 'F'],
 }
-
-
-# DFS за допогою бібліотеки networkx
-dfs_tree = nx.dfs_tree(G, source='A')
-print(list(dfs_tree.edges())) 
 
 # Рекурсивна реалізація алгоритму DFS 
 def dfs_recursive(graph,vertex,visited=None):
@@ -32,12 +24,6 @@ def dfs_recursive(graph,vertex,visited=None):
 
 dfs_recursive(graph,'A')
 print()
-print()
-
-
-# BFS за допогою бібліотеки networkx
-bfs_tree = nx.bfs_tree(G, source='A')
-print(list(bfs_tree.edges()))  
 
 # Ітеративна реалізація алгоритму BFS
 def bfs_iterative(graph, start):

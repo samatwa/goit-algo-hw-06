@@ -41,3 +41,4 @@ if is_connected:
     print("The graph is connected.")
 else:
     print("The graph is not connected.")
+print()
