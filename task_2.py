@@ -19,7 +19,7 @@ graph = {
 dfs_tree = nx.dfs_tree(G, source='A')
 print(list(dfs_tree.edges())) 
 
-#Рекурсивна реалізація алгоритму DFS 
+# Рекурсивна реалізація алгоритму DFS 
 def dfs_recursive(graph,vertex,visited=None):
     if visited is None:
         visited = set()
@@ -39,7 +39,7 @@ print()
 bfs_tree = nx.bfs_tree(G, source='A')
 print(list(bfs_tree.edges()))  
 
-#Ітеративна реалізація алгоритму BFS
+# Ітеративна реалізація алгоритму BFS
 def bfs_iterative(graph, start):
     visited =set()
     queue = deque([start])
